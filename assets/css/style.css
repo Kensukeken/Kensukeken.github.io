@@ -1,110 +1,282 @@
 /* CSS file: style.css */
 
+/* Style for the body element */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('../gifs/math.gif');
-    background-color: #5c4c73;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets the font family for the text */
+    background-image: url('../gifs/math.gif'); /* Sets a background image */
+    background-color: #5c4c73; /* Sets a background color */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover; /* Ensures the background image covers the entire area */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center; /* Centers the background image */
+    color: #333; /* Sets the text color */
+    margin: 0; /* Removes default margin */
+    padding: 20; /* Removes default padding */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Sets the flex direction to column */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    animation: fadeIn 1s ease-in-out; /* Adds a fade-in animation to the body */
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Style for the header element */
 header {
-    background-color: #4b0082;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    background-color: #4b0082; /* Sets the background color */
+    color: white; /* Sets the text color */
+    padding: 1rem; /* Adds padding */
+    text-align: center; /* Aligns the text to the center */
+    animation: slideDown 1s ease-in-out; /* Adds a slide-down animation to the header */
 }
 
+/* Slide-down animation */
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+/* Style for the navigation menu */
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    list-style: none; /* Removes the default list style */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers the navigation items */
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1rem; /* Adds horizontal margin to each list item */
+    animation: fadeIn 1s ease-in-out 0.5s forwards; /* Adds a staggered fade-in animation to each list item */
+    opacity: 0; /* Initially hides the list items */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Sets the link color */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Adds a transition effect to the color */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adds underline on hover */
 }
 
+/* Style for the main content area */
 main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    flex: 1;
+    padding: 2rem; /* Adds padding */
+    max-width: 1200px; /* Sets the maximum width */
+    margin: 2rem auto; /* Adds vertical margin and centers horizontally */
+    background-color: #fff; /* Sets the background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 2px; /* Rounds the corners slightly */
+    flex: 1; /* Allows the main area to expand and fill available space */
+    animation: fadeIn 2s ease-in-out; /* Adds a fade-in animation to the main content */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 main h1 {
-    color: #4b0082;
-    border-bottom: 2px solid #4b0082;
-    padding-bottom: 10px;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    color: #4b0082; /* Sets the heading color */
+    border-bottom: 2px solid #4b0082; /* Adds a bottom border */
+    padding-bottom: 10px; /* Adds padding below the heading text */
+    margin-bottom: 1.5rem; /* Adds margin below the heading */
+    text-align: center; /* Centers the heading text */
 }
 
-.artwork-gallery {
+/* Style for the profile card */
+.profile-card {
+    background-color: #41125e; /* Deep purple background */
+    padding: 1rem; /* Increased padding for a more spacious look */
+    border-radius: 12px; /* Slightly larger border-radius for a smoother curve */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
+    text-align: center; /* Center the text */
+    animation: slideUp 1s ease-in-out; /* Slide-up animation */
+}
+
+/* Style for the profile picture */
+.profile-card img {
+    width: 130px; /* Increased width for a more prominent profile picture */
+    height: 130px; /* Increased height to match width */
+    border-radius: 50%; /* Circular profile picture */
+    margin-bottom: 1rem; /* Added margin below the image */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for scale and filter */
+}
+
+/* Hover effect for the profile picture */
+.profile-card img:hover {
+    transform: scale(1.1); /* Slightly scales up the image on hover */
+    filter: brightness(1.2); /* Brightens the image on hover */
+}
+
+/* Style for the heading */
+.profile-card h2 {
+    color: #ffffff; /* White text color for contrast */
+    margin: 0 0 0.5rem; /* Margin below the heading */
+    font-size: 1.5rem; /* Slightly larger font size for the heading */
+}
+
+/* Style for the paragraph */
+.profile-card p {
+    color: #d3d3d3; /* Light gray text color for readability */
+    font-size: 1rem; /* Standard font size */
+    margin: 0 0 1rem; /* Margin below the paragraph */
+}
+
+/* Style for social media links */
+.profile-card .social-links a {
+    color: #c4a2ea; /* Gold color for social media links */
+    font-size: 1.5rem; /* Font size for social media icons */
+    margin: 0 0.75rem; /* Increased horizontal margin for better spacing */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition effects for color and scale */
+}
+
+/* Hover effect for social media links */
+.profile-card .social-links a:hover {
+    color: #ffffff; /* Changes color to white on hover */
+    transform: scale(1.2); /* Slightly scales up the icon on hover */
+}
+
+/* Style for the languages section */
+.icon {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allows wrapping if there are too many items */
+    justify-content: space-around; /* Distributes space evenly */
+    gap: 1rem; /* Adds space between items */
+    padding: 1rem; /* Adds padding around the container */
+}
+
+/* Style for each icon link */
+.icon a {
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center items horizontally */
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Style for the language images */
+.icon img {
+    width: 70px; /* Set a fixed width for icons */
+    height: 70px; /* Set a fixed height for icons */
+    border-radius: 8px; /* Optional: rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for icons */
+.icon a:hover img {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+
+.project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
 
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+.project-card h2 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.project-card h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+/* Style for the artwork gallery */
+.artwork-gallery {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
+    gap: 1rem; /* Adds space between items */
+}
+
 .artwork-item {
-    text-align: center;
+    text-align: center; /* Centers the content */
+    animation: fadeIn 1.5s ease-in-out; /* Adds a fade-in animation to each artwork item */
 }
 
 .artwork-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s;
+    width: 100%; /* Makes the image take the full width of the container */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 8px; /* Rounds the corners of the image */
+    transition: transform 0.3s; /* Adds a transition effect */
 }
 
 .artwork-item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scales up the image on hover */
 }
 
 .artwork-item p {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    color: #4b0082;
+    margin-top: 0.5rem; /* Adds margin above the paragraph */
+    font-weight: bold; /* Makes the text bold */
+    color: #4b0082; /* Sets the text color */
 }
 
+/* Style for the footer element */
 footer {
-    background-color: #4b0082;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    background-color: #4b0082; /* Sets the background color */
+    color: white; /* Sets the text color */
+    text-align: center; /* Centers the text */
+    padding: 1rem; /* Adds padding */
+    margin-top: 2rem; /* Adds top margin */
+    animation: slideUp 1s ease-in-out; /* Adds a slide-up animation to the footer */
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stacks the navigation items vertically */
+        align-items: center; /* Centers the navigation items */
     }
 
     nav ul li {
-        margin: 0.5rem 0;
+        margin: 0.5rem 0; /* Adds vertical margin to each list item */
     }
 
     main {
-        padding: 1rem;
+        padding: 1rem; /* Reduces padding */
     }
 }
