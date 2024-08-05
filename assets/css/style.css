@@ -182,16 +182,16 @@ main h1 {
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
 
 .project-card {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #5829a3;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(97, 20, 141, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -205,7 +205,7 @@ main h1 {
 }
 
 .project-card h2 a {
-    color: #333;
+    color: #6a2eca;
     text-decoration: none;
     font-size: 1.2rem;
 }
