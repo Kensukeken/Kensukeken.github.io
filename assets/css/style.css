@@ -26,7 +26,7 @@ body {
 
 /* Style for the header element */
 header {
-    background-color: #4b0082; /* Sets the background color */
+    background-color: #52287a97; /* Sets the background color */
     color: white; /* Sets the text color */
     padding: 1rem; /* Adds padding */
     text-align: center; /* Aligns the text to the center */
@@ -45,7 +45,7 @@ nav ul {
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
     display: flex; /* Uses flexbox layout */
-    justify-content: center; /* Centers the navigation items */
+    justify-content: right; /* Centers the navigation items */
 }
 
 nav ul li {
@@ -72,8 +72,8 @@ nav ul li a:hover {
 /* Style for the main content area */
 main {
     padding: 2rem; /* Adds padding */
-    max-width: 1200px; /* Sets the maximum width */
-    margin: 2rem auto; /* Adds vertical margin and centers horizontally */
+    max-width: 1100px; /* Sets the maximum width */
+    margin: 3rem; /* Adds vertical margin and centers horizontally */
     background-color: #fff; /* Sets the background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     border-radius: 2px; /* Rounds the corners slightly */
@@ -279,4 +279,29 @@ footer {
     main {
         padding: 1rem; /* Reduces padding */
     }
+}
+/* Style for the welcome section */
+.welcome-section {
+    text-align: center; /* Centers the text */
+    padding: 2rem; /* Adds padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Adds a semi-transparent background */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    animation: fadeIn 2s ease-in-out; /* Adds a fade-in animation */
+}
+
+/* Style for the welcome button */
+.welcome-button {
+    display: inline-block; /* Makes the button inline-block */
+    padding: 10px 20px; /* Adds padding */
+    margin-top: 1rem; /* Adds margin above the button */
+    background-color: #594a98; /* Sets the background color */
+    color: white; /* Sets the text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Adds a transition effect */
+}
+
+.welcome-button:hover {
+    background-color: #7100b3; /* Changes the background color on hover */
 }
