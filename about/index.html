@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .timestamp {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +29,7 @@
         <h1>About Me</h1>
         <p>Hi, I'm Kensukeken, a painter artist and programmer as well lifelong learner. Welcome to my personal website where I showcase my work and share my thoughts.</p>
         <p>My love for creativity and technology drives everything I do. Fluent in Turkmen, Arabic, and Turkish, I bring a unique cultural perspective to my work.</p>
-        <p>I've been playing Geometry Dash since 2015. I am all about creating awesome experiences through code and design. Feel free to check my <a href="../projects/index.html">Projects</a>. Whether I'm painting a picture or making a game,  sometimes <a href="https://www.latex-project.org/"> LaTeX</a>, I put my heart into it. When I'm not coding or painting, I like to explore new ideas, learn new stuff, or play some games. I have a diverse set of interests, including coding, drawing, and writing. I'm currently building new projects on bunch of languages. Welcome to my creative world!</p>
+        <p>I've been playing Geometry Dash since 2015. I am all about creating awesome experiences through code and design. Feel free to check my <a href="../projects/index.html">Projects</a>. Whether I'm painting a picture or making a game, sometimes <a href="https://www.latex-project.org/">LaTeX</a>, I put my heart into it. When I'm not coding or painting, I like to explore new ideas, learn new stuff, or play some games. I have a diverse set of interests, including coding, drawing, and writing. I'm currently building new projects on a bunch of languages. Welcome to my creative world!</p>
 
         <h1>Languages</h1>
         <div class="icon">
@@ -54,26 +61,50 @@
                 <img src="../assets/images/JavaScript.png" alt="JavaScript">
             </a>
             <a href="https://react.dev/">
-            <img src="../assets/images/react.png" alt="React">
+                <img src="../assets/images/react.png" alt="React">
             </a>
         </div>
         <div class="profile-card">
             <img src="../assets/images/pfp.png" alt="Profile Picture">
-            <h2>Kensukeken</h2>
-            <p>Painter Artist and Programmer <br/> Fluent in &#127481 &#127474, &#127480 &#127462, &#127481 &#127479</p>
-            
+            <h2>Kensukeken <small> (She/Her)</small></h2>
+            <p>
+                <b>Painter Artist and Programmer</b> 
+                <img src="../assets/gifs/kokichi.gif" alt="Emoji" style="width: 30px; height: 30px; vertical-align: middle;"> <br/>
+                Fluent in &#127481&#127474, &#127480&#127462, &#127481&#127479 <br/>
+                Loves Geometry Dash since <span id="timestamp"></span>
+                <img src="../assets/images/cube.png" alt="Emoji" style="width: 30px; height: 30px; vertical-align: middle;">
+            </p>
+
             <div class="social-links">
                 <a href="https://github.com/Kensukeken" target="_blank">GitHub</a>
                 <a href="https://twitter.com/Kensukeken_" target="_blank">Twitter</a>
                 <a href="https://solo.to/kensukeken" target="_blank">Solo.to</a> 
-                <a href="https://gdbrowser.com/u/kensukeken" target="_blank">Geometry Dash </a> 
-                <a href="https://steamcommunity.com/id/Kensukeken/" target="_blank"> Steam</a>
+                <a href="https://gdbrowser.com/u/kensukeken" target="_blank">Geometry Dash</a> 
+                <a href="https://steamcommunity.com/id/Kensukeken/" target="_blank">Steam</a>
             </div>
-        </div>        
+        </div>  
+        <h1>Listen to my playlist on Spotify!</h1>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/59sVd3fsfjur0OlAa6txHR?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      
     </main>
 
     <footer>
         <p>&copy; 2024 Kensukeken</p>
     </footer>
+
+    <script>
+        // Function to convert Unix timestamp to a readable date
+        function formatTimestamp(timestamp) {
+            const date = new Date(timestamp * 1000); // Convert seconds to milliseconds
+            const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format options
+            return date.toLocaleDateString(undefined, options); // Format date as a readable string
+        }
+
+        // Unix timestamp
+        const unixTimestamp = 1439398512;
+        
+        // Display the formatted date
+        document.getElementById('timestamp').innerText = formatTimestamp(unixTimestamp);
+    </script>
 </body>
 </html>

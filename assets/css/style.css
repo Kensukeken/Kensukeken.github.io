@@ -97,7 +97,7 @@ main h1 {
 
 /* Style for the profile card */
 .profile-card {
-    background-color: #41125e; /* Deep purple background */
+    background-image: url('../images/banner.jpg'); /* Background */
     padding: 1rem; /* Increased padding for a more spacious look */
     border-radius: 12px; /* Slightly larger border-radius for a smoother curve */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
@@ -251,7 +251,7 @@ main h1 {
 
 /* Style for the footer element */
 footer {
-    background-color: #4b0082; /* Sets the background color */
+    background-color: #52287a97; /* Sets the background color */
     color: white; /* Sets the text color */
     text-align: center; /* Centers the text */
     padding: 1rem; /* Adds padding */
@@ -305,3 +305,7 @@ footer {
 .welcome-button:hover {
     background-color: #7100b3; /* Changes the background color on hover */
 }
+.custom-emoji img {
+    width: 16px;
+    height: 16px;
+}  
