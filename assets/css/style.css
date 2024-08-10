@@ -309,3 +309,95 @@ footer {
     width: 16px;
     height: 16px;
 }  
+.responsive-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    padding: 10px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Media query to adjust padding and borders for smaller screens */
+@media (max-width: 600px) {
+    .responsive-image {
+        padding: 5px; /* Reduce padding on smaller screens */
+        border-radius: 5px; /* Slightly smaller rounded corners */
+    }
+}
+#styled-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+/* General Styles */
+details {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+summary:hover {
+    background-color: #c0c0c0;
+}
+
+/* Content Styles */
+details p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+details li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Highlight Colors */
+details {
+    border: 1px solid #9c27b0;
+}
+
+summary {
+    background-color: #9c27b0;
+    color: white;
+}
+
+summary:hover {
+    background-color: #7b1fa2;
+}
+
+details p {
+    color: #666;
+}
+
+details ul {
+    color: #444;
+}
