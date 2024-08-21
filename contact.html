@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* General styling for the contact section */
+        .contact-section {
+            padding: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Form styling */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            margin-top: 0.25rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input[type="email"]:focus,
+        .contact-form textarea:focus {
+            border-color: #6200ea;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button {
+            padding: 1rem 2rem;
+            background-color: #6200ea;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #3700b3;
+            transform: scale(1.05);
+        }
+
+        .contact-form button:focus {
+            outline: none;
+        }
+        
+        /* Additional text styling */
+        .contact-section p {
+            margin-bottom: 1.5rem;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About Me</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../artworks/index.html">Artworks</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or just want to get in touch, feel free to send me a message using the form below. I'll get back to you as soon as possible!</p>
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xldrpbyz"
+              method="POST"
+            >
+              <label>
+                Your email:
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                Your message:
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+              <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kensukeken</p>
+    </footer>
+</body>
+</html>

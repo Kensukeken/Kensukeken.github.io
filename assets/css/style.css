@@ -26,6 +26,8 @@ body {
 
 /* Style for the header element */
 header {
+    position: sticky;
+    top: 0;
     background-color: #52287a97; /* Sets the background color */
     color: white; /* Sets the text color */
     padding: 1rem; /* Adds padding */
@@ -39,19 +41,36 @@ header {
     to { transform: translateY(0); }
 }
 
-/* Style for the navigation menu */
+/* Basic styling for the nav */
+nav {
+    background-color: #5c4c7385;
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+    padding: 1rem;
+}
+
+/* Shadow when scrolled down */
+nav.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Deeper shadow for scrolled state */
+}
+
+/* Shadow when hovering over the nav */
+nav:hover,
+nav:focus-within {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover/focus */
+}
+
 nav ul {
-    list-style: none; /* Removes the default list style */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Uses flexbox layout */
-    justify-content: right; /* Centers the navigation items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
 }
 
 nav ul li {
-    margin: 0 1rem; /* Adds horizontal margin to each list item */
-    animation: fadeIn 1s ease-in-out 0.5s forwards; /* Adds a staggered fade-in animation to each list item */
-    opacity: 0; /* Initially hides the list items */
+    margin: 0 1rem;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+    opacity: 0;
 }
 
 @keyframes fadeIn {
@@ -60,13 +79,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Sets the link color */
-    text-decoration: none; /* Removes underline from links */
-    transition: color 0.3s ease; /* Adds a transition effect to the color */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
 }
 
 /* Style for the main content area */
@@ -400,4 +419,54 @@ details p {
 
 details ul {
     color: #444;
+}
+/* Targeting paragraphs within the main content of the blog */
+main.blog-content p {
+    font-family: "Times New Roman", Times, serif;
+    text-indent: 2em; /* Creates the indent for the first line of each paragraph */
+    line-height: 1.6; /* Adjusts the line height for better readability */
+}
+/* Documents Section Styling */
+.documents-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.documents-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.documents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.documents-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.documents-list li a {
+    font-size: 16px;
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.documents-list li a:hover {
+    text-decoration: underline;
+}
+
+.documents-list li p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
 }
