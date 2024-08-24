@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 5</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets the font family for the text */
+            background-image: url('../gifs/math.gif'); /* Sets a background image */
+            background-color: #ddd;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #0f0707;
+        }
+
+        /* Header Styling */
+        header {
+        position: sticky;
+        top: 0;
+        background-color: #52287a97; /* Sets the background color */
+        color: white; /* Sets the text color */
+        padding: 1rem; /* Adds padding */
+        text-align: center; /* Aligns the text to the center */
+        animation: slideDown 1s ease-in-out; /* Adds a slide-down animation to the header */
+}
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sidebar Styling */
+        .menu-btn {
+            font-size: 1.5rem;
+            background: #52287a;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px; /* Initially hidden off-screen */
+            background-color: #f8f8f8;
+            border-right: 1px solid #ddd;
+            padding: 1rem;
+            box-sizing: border-box;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            z-index: 999;
+        }
+
+        .sidebar.show-menu {
+            left: 0; /* Show when toggled */
+        }
+
+        .sidebar a {
+            display: block;
+            color: #52287a;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .dropdown {
+            position: relative;
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #52287a;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .main-content {
+            margin-left: 0;
+            transition: margin-left 0.3s ease;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .main-content.expanded {
+            margin-left: 250px;
+        }
+        footer {
+        background-color: #52287a97; /* Sets the background color */
+        color: white; /* Sets the text color */
+        text-align: center; /* Centers the text */
+        padding: 1rem; /* Adds padding */
+        margin-top: 2rem; /* Adds top margin */
+        animation: slideUp 1s ease-in-out; /* Adds a slide-up animation to the footer */
+}
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.sidebar');
+            var content = document.querySelector('.main-content');
+            menu.classList.toggle('show-menu');
+            content.classList.toggle('expanded');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About Me</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../artworks/index.html">Artworks</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="menu-btn" onclick="toggleMenu()">☰ Menu</div>
+    
+    <div class="sidebar">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#characters">Important Characters</a></li>
+            <li><a href="#summary">Story Summary</a></li>
+            <li><a href="#audience">Who Would Like This Movie?</a></li>
+            <li><a href="#rating">Rating</a></li>
+            <li><a href="#lesson">Lesson or Moral</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#footer">Footer</a></li>
+            <div class="dropdown">
+                <button class="dropdown-btn">More <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#https://en.wikipedia.org/wiki/Hidden_Figures">Wikipedia</a>
+                    <a href="https://www.scientificamerican.com/article/the-story-of-nasas-real-ldquo-hidden-figures-rdquo/">Story of Nasa</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Movie Review: Hidden Figures</h2>
+        <article>
+            <section id="characters" class="movie-info">
+                <h3>Important Characters</h3>
+                <p><strong>Hidden Figures</strong> features two pivotal characters, portrayed by acclaimed actors:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Character's Name</th>
+                            <th>Actor’s Real Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dorothy Vaughan</td>
+                            <td>Octavia Spencer</td>
+                        </tr>
+                        <tr>
+                            <td>Katherine Goble Johnson</td>
+                            <td>Taraji P. Henson</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#summary" class="btn btn-primary">Read More</a>
+            </section>
+            
+            <section id="summary" class="summary">
+                <h3>Story Summary</h3>
+                <p><strong>Hidden Figures</strong> is a powerful film that tells the story of three African-American women who worked at Langley Aeronautical Laboratory in Hampton, Virginia, during the early 1940s. These remarkable women played crucial roles in advancing American aviation and space technology, contributing significantly to NASA's success during the Space Race.</p>
+                <a href="#audience" class="btn btn-primary">Read Summary</a>
+            </section>
+
+            <section id="audience" class="audience">
+                <h3>Who Would Like This Movie?</h3>
+                <p>This movie is perfect for anyone fascinated by space exploration or stories of perseverance and achievement. If you enjoy learning about historical figures who have made groundbreaking contributions to science and technology, you'll find <strong>Hidden Figures</strong> both inspiring and educational. It's also a great watch for those who appreciate historical dramas and want to learn about the unsung heroes behind major scientific milestones.</p>
+                <a href="#rating" class="btn btn-secondary">Find Out More</a>
+            </section>
+
+            <section id="rating" class="rating">
+                <h3>Rating</h3>
+                <p><strong>Hidden Figures</strong> deserves a full 5 stars out of 5. The film not only offers a compelling and heartwarming story but also delivers an important historical lesson. Its engaging narrative, stellar performances, and inspirational message make it a must-watch.</p>
+                <a href="#lesson" class="btn btn-primary">View Rating</a>
+            </section>
+
+            <section id="lesson" class="lesson">
+                <h3>Lesson or Moral</h3>
+                <p>The central lesson of <strong>Hidden Figures</strong> is that determination and hard work can lead to extraordinary achievements, regardless of the obstacles. The film underscores the importance of recognizing and celebrating the contributions of individuals who might otherwise go unnoticed, highlighting the value of diversity and inclusion in achieving great things.</p>
+                <a href="#review" class="btn btn-secondary">Learn More</a>
+            </section>
+
+            <section id="review" class="review">
+                <h3>Review</h3>
+                <p>I highly recommend <strong>Hidden Figures</strong> to anyone interested in both historical and motivational stories. This movie portrays the incredible achievements of a few African-American women who played pivotal roles at NASA during a critical time in American history. It is presented with the excitement and drama of a superhero film but is grounded in real-life events.</p>
+                <p>The film effectively conveys the significance of teamwork and respect for all contributors. It is a source of inspiration for young people, particularly girls and those from underrepresented groups, encouraging them to pursue careers in science, technology, engineering, and mathematics (STEM).</p>
+                <p><strong>Hidden Figures</strong> not only educates viewers about the history of the space race but also celebrates the spirit of empowerment and resilience. The movie showcases how these women overcame numerous challenges to make significant contributions to NASA's success, providing a compelling narrative that resonates with audiences of all backgrounds.</p>
+                <p>In conclusion, this film is not just entertaining but also a powerful reminder that everyone has the potential to make a difference. It inspires viewers to embrace their dreams and work towards their goals, no matter how daunting they may seem.</p>
+            </section>
+        </article>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Kensukeken</p>
+    </footer>
+</body>
+</html>

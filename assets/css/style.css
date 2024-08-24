@@ -79,7 +79,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -469,4 +469,141 @@ main.blog-content p {
     font-size: 14px;
     color: #666;
     margin-top: 5px;
+}
+/* Style for the link */
+.styled-link {
+    color: #ffffff; /* White text */
+    background-color: #52287a; /* Purple background */
+    padding: 10px 15px; /* Padding around the text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect */
+.styled-link:hover {
+    background-color: #6a42a0; /* Darker purple on hover */
+    color: #e5e5e5; /* Light gray text on hover */
+}
+
+/* Active effect */
+.styled-link:active {
+    background-color: #311d4a; /* Even darker purple when active */
+    color: #ffffff; /* White text when active */
+}
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #52287a;
+    border-bottom: 2px solid #52287a;
+    padding-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #050505;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #52287a;
+}
+/* General Styles for Date */
+.post-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #52287a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3b1f5f;
+}
+
+/* Additional Button Styles for Different Types */
+.btn-primary {
+    background-color: #52287a;
+}
+
+.btn-secondary {
+    background-color: #e1b7f7;
+    color: #52287a;
+}
+
+.btn-primary:hover {
+    background-color: #3b1f5f;
+}
+
+.btn-secondary:hover {
+    background-color: #c79ce4;
+    color: #ffffff;
+}
+
+/* Responsive Design for Buttons */
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+/* Sidebar Styles */
+aside {
+    width: 25%;
+    padding: 1rem;
+    background: #e9e9e9;
+    border-left: 2px solid #ddd;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    height: calc(100vh - 4rem);
+    overflow: auto;
+}
+
+aside h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #52287a;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
 }
