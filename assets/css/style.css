@@ -607,3 +607,80 @@ aside ul li a {
 aside ul li a:hover {
     text-decoration: underline;
 }
+
+
+.hobbies-section {
+  background-color: #f0e6fa; /* Soft purple background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a.latex-link {
+  color: #6b359f; /* Purple link color */
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #d3bff0;
+}
+
+a.latex-link:hover {
+  color: #3c1361; /* Darker purple on hover */
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  h2.section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.responsive-img {
+    width: 100%;       /* Make the image take up the full width of its container */
+    height: auto;      /* Keep the aspect ratio intact */
+    display: block;    /* Remove any small gaps below the image */
+    max-width: 100%;   /* Ensures image doesn’t exceed its actual width */
+    border-radius: 8px;  /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+
+  .servers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* Space between logos */
+    margin-top: 20px;
+  }
+  
+  .server {
+    text-align: center;
+    background-color: #f0f0f0; /* Light background for logo containers */
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px; /* Adjust width of each server box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    transition: transform 0.3s ease;
+  }
+  
+  .server a {
+    display: block;
+  }
+  
+  .server-logo {
+    width: 100%;
+    height: auto;   /* Keep the aspect ratio of the logos */
+    border-radius: 8px;  /* Add rounded corners to logos */
+  }
+  
+  .server p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .server:hover {
+    transform: scale(1.05);  /* Slightly enlarge the logo on hover */
+  }
+  
