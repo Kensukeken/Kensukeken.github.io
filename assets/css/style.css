@@ -2,61 +2,79 @@
 
 /* Style for the body element */
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets the font family for the text */
-    background-image: url('../gifs/math.gif'); /* Sets a background image */
-    background-color: #5c4c73; /* Sets a background color */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-size: cover; /* Ensures the background image covers the entire area */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
-    background-position: center; /* Centers the background image */
-    color: #333; /* Sets the text color */
-    margin: 0; /* Removes default margin */
-    padding: 20; /* Removes default padding */
-    display: flex; /* Uses flexbox layout */
-    flex-direction: column; /* Sets the flex direction to column */
-    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
-    animation: fadeIn 1s ease-in-out; /* Adds a fade-in animation to the body */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('../gifs/math.gif');
+    background-color: #5c4c73;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Style for the header element */
 header {
     position: sticky;
     top: 0;
-    background-color: #52287a97; /* Sets the background color */
-    color: white; /* Sets the text color */
-    padding: 1rem; /* Adds padding */
-    text-align: center; /* Aligns the text to the center */
-    animation: slideDown 1s ease-in-out; /* Adds a slide-down animation to the header */
+    background-color: #52287a97;
+    /* Sets the background color */
+    color: white;
+    /* Sets the text color */
+    padding: 1rem;
+    /* Adds padding */
+    text-align: center;
+    /* Aligns the text to the center */
+    animation: slideDown 1s ease-in-out;
+    /* Adds a slide-down animation to the header */
 }
 
 /* Slide-down animation */
 @keyframes slideDown {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* Basic styling for the nav */
 nav {
     background-color: #5c4c7385;
-    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition for shadow effect */
     padding: 1rem;
 }
 
 /* Shadow when scrolled down */
 nav.scrolled {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Deeper shadow for scrolled state */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Deeper shadow for scrolled state */
 }
 
 /* Shadow when hovering over the nav */
 nav:hover,
 nav:focus-within {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover/focus */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    /* Stronger shadow on hover/focus */
 }
 
 nav ul {
@@ -73,138 +91,267 @@ nav ul li {
     opacity: 0;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* Style for the navigation links */
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
 nav ul li a:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+    color: #7f69a5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Style for the main content area */
 main {
-    padding: 2rem; /* Adds padding */
-    max-width: 1100px; /* Sets the maximum width */
-    margin: 3rem; /* Adds vertical margin and centers horizontally */
-    background-color: #fff; /* Sets the background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    border-radius: 2px; /* Rounds the corners slightly */
-    flex: 1; /* Allows the main area to expand and fill available space */
-    animation: fadeIn 2s ease-in-out; /* Adds a fade-in animation to the main content */
+    padding: 0;
+    margin: 0;
+    flex: 1 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 4rem;
+}
+
+/* Section content area */
+section {
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 30px;
+    max-width: 900px;
+    background: linear-gradient(to bottom right, #ffffff, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Section heading 1 styles */
+section h1 {
+    color: #4b0082;
+    border-bottom: 2px solid #4b0082;
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Section heading 2 styles */
+section h2 {
+    color: #5c4c73;
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Section paragraph styles */
+section p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Ordered and unordered list styling */
+section ul,
+section ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* List item styling */
+section ul li,
+section ol li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Style for the section links */
+section a {
+    color: #5c4c73;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for section links */
+section a:hover {
+    color: #c227f1;
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 main h1 {
-    color: #4b0082; /* Sets the heading color */
-    border-bottom: 2px solid #4b0082; /* Adds a bottom border */
-    padding-bottom: 10px; /* Adds padding below the heading text */
-    margin-bottom: 1.5rem; /* Adds margin below the heading */
-    text-align: center; /* Centers the heading text */
+    color: #4b0082;
+    /* Sets the heading color */
+    border-bottom: 2px solid #4b0082;
+    /* Adds a bottom border */
+    padding-bottom: 10px;
+    /* Adds padding below the heading text */
+    margin-bottom: 1.5rem;
+    /* Adds margin below the heading */
+    text-align: center;
+    /* Centers the heading text */
 }
 
 /* Style for the profile card */
 .profile-card {
-    background-image: url('../images/banner.jpg'); /* Background */
-    padding: 1rem; /* Increased padding for a more spacious look */
-    border-radius: 12px; /* Slightly larger border-radius for a smoother curve */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
-    text-align: center; /* Center the text */
-    animation: slideUp 1s ease-in-out; /* Slide-up animation */
+    background-image: url('../images/banner.jpg');
+    /* Background */
+    padding: 1rem;
+    /* Increased padding for a more spacious look */
+    border-radius: 12px;
+    /* Slightly larger border-radius for a smoother curve */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Slightly more pronounced shadow */
+    text-align: center;
+    /* Center the text */
+    animation: slideUp 1s ease-in-out;
+    /* Slide-up animation */
 }
 
 /* Style for the profile picture */
 .profile-card img {
-    width: 130px; /* Increased width for a more prominent profile picture */
-    height: 130px; /* Increased height to match width */
-    border-radius: 50%; /* Circular profile picture */
-    margin-bottom: 1rem; /* Added margin below the image */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for scale and filter */
+    width: 130px;
+    /* Increased width for a more prominent profile picture */
+    height: 130px;
+    /* Increased height to match width */
+    border-radius: 50%;
+    /* Circular profile picture */
+    margin-bottom: 1rem;
+    /* Added margin below the image */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Transition for scale and filter */
 }
 
 /* Hover effect for the profile picture */
 .profile-card img:hover {
-    transform: scale(1.1); /* Slightly scales up the image on hover */
-    filter: brightness(1.2); /* Brightens the image on hover */
+    transform: scale(1.1);
+    /* Slightly scales up the image on hover */
+    filter: brightness(1.2);
+    /* Brightens the image on hover */
 }
 
 /* Style for the heading */
 .profile-card h2 {
-    color: #ffffff; /* White text color for contrast */
-    margin: 0 0 0.5rem; /* Margin below the heading */
-    font-size: 1.5rem; /* Slightly larger font size for the heading */
+    color: #ffffff;
+    /* White text color for contrast */
+    margin: 0 0 0.5rem;
+    /* Margin below the heading */
+    font-size: 1.5rem;
+    /* Slightly larger font size for the heading */
 }
 
 /* Style for the paragraph */
 .profile-card p {
-    color: #d3d3d3; /* Light gray text color for readability */
-    font-size: 1rem; /* Standard font size */
-    margin: 0 0 1rem; /* Margin below the paragraph */
+    color: #d3d3d3;
+    /* Light gray text color for readability */
+    font-size: 1rem;
+    /* Standard font size */
+    margin: 0 0 1rem;
+    /* Margin below the paragraph */
 }
 
 /* Style for social media links */
 .profile-card .social-links a {
-    color: #c4a2ea; /* Gold color for social media links */
-    font-size: 1.5rem; /* Font size for social media icons */
-    margin: 0 0.75rem; /* Increased horizontal margin for better spacing */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transition effects for color and scale */
+    color: #c4a2ea;
+    /* Gold color for social media links */
+    font-size: 1.5rem;
+    /* Font size for social media icons */
+    margin: 0 0.75rem;
+    /* Increased horizontal margin for better spacing */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transition effects for color and scale */
 }
 
 /* Hover effect for social media links */
 .profile-card .social-links a:hover {
-    color: #ffffff; /* Changes color to white on hover */
-    transform: scale(1.2); /* Slightly scales up the icon on hover */
+    color: #ffffff;
+    /* Changes color to white on hover */
+    transform: scale(1.2);
+    /* Slightly scales up the icon on hover */
 }
 
 /* Style for the languages section */
 .icon {
-    display: flex; /* Use Flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allows wrapping if there are too many items */
-    justify-content: space-around; /* Distributes space evenly */
-    gap: 1rem; /* Adds space between items */
-    padding: 1rem; /* Adds padding around the container */
+    display: flex;
+    /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap;
+    /* Allows wrapping if there are too many items */
+    justify-content: space-around;
+    /* Distributes space evenly */
+    gap: 1rem;
+    /* Adds space between items */
+    padding: 1rem;
+    /* Adds padding around the container */
 }
 
 /* Style for each icon link */
 .icon a {
-    display: flex; /* Flexbox for vertical alignment */
-    flex-direction: column; /* Stack text and image vertically */
-    align-items: center; /* Center items horizontally */
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Inherit color from parent */
+    display: flex;
+    /* Flexbox for vertical alignment */
+    flex-direction: column;
+    /* Stack text and image vertically */
+    align-items: center;
+    /* Center items horizontally */
+    text-decoration: none;
+    /* Removes underline from links */
+    color: inherit;
+    /* Inherit color from parent */
 }
 
 /* Style for the language images */
 .icon img {
-    width: 70px; /* Set a fixed width for icons */
-    height: 70px; /* Set a fixed height for icons */
-    border-radius: 8px; /* Optional: rounded corners for images */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    width: 70px;
+    /* Set a fixed width for icons */
+    height: 70px;
+    /* Set a fixed height for icons */
+    border-radius: 8px;
+    /* Optional: rounded corners for images */
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
 }
 
 /* Hover effect for icons */
 .icon a:hover img {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the icon on hover */
 }
 
-
+/* Project List Styles */
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
 
+/* Project Card Styles */
 .project-card {
     background: #fff;
     border: 1px solid #5829a3;
@@ -214,140 +361,193 @@ main h1 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
+/* Project Card Title Styles */
 .project-card h2 {
     margin-top: 0;
 }
 
+/* Project Card Link Styles */
 .project-card h2 a {
     color: #6a2eca;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
+/* Hover effect for project card links */
 .project-card h2 a:hover {
     text-decoration: underline;
 }
 
 /* Slide-up animation */
 @keyframes slideUp {
-    from { transform: translateY(100%); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* Style for the artwork gallery */
 .artwork-gallery {
-    display: grid; /* Uses grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
-    gap: 1rem; /* Adds space between items */
+    display: grid;
+    /* Uses grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Creates responsive columns */
+    gap: 1rem;
+    /* Adds space between items */
 }
 
 .artwork-item {
-    text-align: center; /* Centers the content */
-    animation: fadeIn 1.5s ease-in-out; /* Adds a fade-in animation to each artwork item */
+    text-align: center;
+    /* Centers the content */
+    animation: fadeIn 1.5s ease-in-out;
+    /* Adds a fade-in animation to each artwork item */
 }
 
 .artwork-item img {
-    width: 100%; /* Makes the image take the full width of the container */
-    height: auto; /* Keeps the aspect ratio */
-    border-radius: 8px; /* Rounds the corners of the image */
-    transition: transform 0.3s; /* Adds a transition effect */
+    width: 100%;
+    /* Makes the image take the full width of the container */
+    height: auto;
+    /* Keeps the aspect ratio */
+    border-radius: 8px;
+    /* Rounds the corners of the image */
+    transition: transform 0.3s;
+    /* Adds a transition effect */
 }
 
 .artwork-item img:hover {
-    transform: scale(1.05); /* Scales up the image on hover */
+    transform: scale(1.05);
+    /* Scales up the image on hover */
 }
 
 .artwork-item p {
-    margin-top: 0.5rem; /* Adds margin above the paragraph */
-    font-weight: bold; /* Makes the text bold */
-    color: #4b0082; /* Sets the text color */
+    margin-top: 0.5rem;
+    /* Adds margin above the paragraph */
+    font-weight: bold;
+    /* Makes the text bold */
+    color: #4b0082;
+    /* Sets the text color */
 }
 
-/* Style for the footer element */
+
+/* Style for the footer */
 footer {
-    background-color: #52287a97; /* Sets the background color */
-    color: white; /* Sets the text color */
-    text-align: center; /* Centers the text */
-    padding: 1rem; /* Adds padding */
-    margin-top: 2rem; /* Adds top margin */
-    animation: slideUp 1s ease-in-out; /* Adds a slide-up animation to the footer */
+    background-color: #52287a97;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    position: relative;
+    animation: slideUp 1s ease-in-out;
 }
 
 /* Slide-up animation */
 @keyframes slideUp {
-    from { transform: translateY(100%); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column; /* Stacks the navigation items vertically */
-        align-items: center; /* Centers the navigation items */
+        flex-direction: column;
+        /* Stacks the navigation items vertically */
+        align-items: center;
+        /* Centers the navigation items */
     }
 
     nav ul li {
-        margin: 0.5rem 0; /* Adds vertical margin to each list item */
+        margin: 0.5rem 0;
+        /* Adds vertical margin to each list item */
     }
 
     main {
-        padding: 1rem; /* Reduces padding */
+        padding: 1rem;
+        /* Reduces padding */
     }
 }
+
 /* Style for the welcome section */
 .welcome-section {
-    text-align: center; /* Centers the text */
-    padding: 2rem; /* Adds padding */
-    background-color: rgba(255, 255, 255, 0.9); /* Adds a semi-transparent background */
-    border-radius: 10px; /* Rounds the corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    animation: fadeIn 2s ease-in-out; /* Adds a fade-in animation */
+    text-align: center;
+    /* Centers the text */
+    padding: 2rem;
+    /* Adds padding */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Adds a semi-transparent background */
+    border-radius: 10px;
+    /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    animation: fadeIn 2s ease-in-out;
+    /* Adds a fade-in animation */
 }
 
 /* Style for the welcome button */
 .welcome-button {
-    display: inline-block; /* Makes the button inline-block */
-    padding: 10px 20px; /* Adds padding */
-    margin-top: 1rem; /* Adds margin above the button */
-    background-color: #594a98; /* Sets the background color */
-    color: white; /* Sets the text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 5px; /* Rounds the corners */
-    transition: background-color 0.3s ease; /* Adds a transition effect */
+    display: inline-block;
+    /* Makes the button inline-block */
+    padding: 10px 20px;
+    /* Adds padding */
+    margin-top: 1rem;
+    /* Adds margin above the button */
+    background-color: #594a98;
+    /* Sets the background color */
+    color: white;
+    /* Sets the text color */
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 5px;
+    /* Rounds the corners */
+    transition: background-color 0.3s ease;
+    /* Adds a transition effect */
 }
 
 .welcome-button:hover {
-    background-color: #7100b3; /* Changes the background color on hover */
+    background-color: #7100b3;
+    /* Changes the background color on hover */
 }
+
 .custom-emoji img {
     width: 16px;
     height: 16px;
-}  
+}
+
 .responsive-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    width: 100%; /* Ensures the image takes up the full width of its container */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    /* Ensures the image takes up the full width of its container */
+    height: auto;
+    /* Maintains aspect ratio */
     padding: 10px;
-    border: 2px solid #ccc; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border: 2px solid #ccc;
+    /* Light gray border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
 }
 
 /* Media query to adjust padding and borders for smaller screens */
 @media (max-width: 600px) {
     .responsive-image {
-        padding: 5px; /* Reduce padding on smaller screens */
-        border-radius: 5px; /* Slightly smaller rounded corners */
+        padding: 5px;
+        /* Reduce padding on smaller screens */
+        border-radius: 5px;
+        /* Slightly smaller rounded corners */
     }
 }
+
 #styled-image {
     display: block;
     margin-left: auto;
@@ -355,11 +555,15 @@ footer {
     max-width: 100%;
     height: auto;
     padding: 10px;
-    border: 2px solid #ccc; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border: 2px solid #ccc;
+    /* Light gray border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
 }
-/* General Styles */
+
+/* Style for the details element. */
 details {
     margin: 20px 0;
     padding: 10px;
@@ -420,12 +624,16 @@ details p {
 details ul {
     color: #444;
 }
+
 /* Targeting paragraphs within the main content of the blog */
-main.blog-content p {
+.blog-content p {
     font-family: "Times New Roman", Times, serif;
-    text-indent: 2em; /* Creates the indent for the first line of each paragraph */
-    line-height: 1.6; /* Adjusts the line height for better readability */
+    text-indent: 2em;
+    /* Creates the indent for the first line of each paragraph */
+    line-height: 1.6;
+    /* Adjusts the line height for better readability */
 }
+
 /* Documents Section Styling */
 .documents-section {
     background-color: #f4f4f4;
@@ -470,28 +678,41 @@ main.blog-content p {
     color: #666;
     margin-top: 5px;
 }
+
 /* Style for the link */
 .styled-link {
-    color: #ffffff; /* White text */
-    background-color: #52287a; /* Purple background */
-    padding: 10px 15px; /* Padding around the text */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+    color: #ffffff;
+    /* White text */
+    background-color: #52287a;
+    /* Purple background */
+    padding: 10px 15px;
+    /* Padding around the text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-weight: bold;
+    /* Bold text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition on hover */
 }
 
 /* Hover effect */
 .styled-link:hover {
-    background-color: #6a42a0; /* Darker purple on hover */
-    color: #e5e5e5; /* Light gray text on hover */
+    background-color: #6a42a0;
+    /* Darker purple on hover */
+    color: #e5e5e5;
+    /* Light gray text on hover */
 }
 
 /* Active effect */
 .styled-link:active {
-    background-color: #311d4a; /* Even darker purple when active */
-    color: #ffffff; /* White text when active */
+    background-color: #311d4a;
+    /* Even darker purple when active */
+    color: #ffffff;
+    /* White text when active */
 }
+
 section {
     margin-bottom: 2rem;
 }
@@ -508,7 +729,8 @@ table {
     margin-top: 1rem;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #050505;
     padding: 0.5rem;
     text-align: left;
@@ -517,6 +739,7 @@ th, td {
 th {
     background-color: #52287a;
 }
+
 /* General Styles for Date */
 .post-date {
     font-size: 0.9rem;
@@ -571,6 +794,7 @@ th {
         font-size: 0.875rem;
     }
 }
+
 /* Sidebar Styles */
 aside {
     width: 25%;
@@ -610,77 +834,102 @@ aside ul li a:hover {
 
 
 .hobbies-section {
-  background-color: #f0e6fa; /* Soft purple background */
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0e6fa;
+    /* Soft purple background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 a.latex-link {
-  color: #6b359f; /* Purple link color */
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid #d3bff0;
+    color: #6b359f;
+    /* Purple link color */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #d3bff0;
 }
 
 a.latex-link:hover {
-  color: #3c1361; /* Darker purple on hover */
+    color: #3c1361;
+    /* Darker purple on hover */
 }
 
 @media (min-width: 768px) {
-  p {
-    font-size: 1.2rem;
-  }
+    p {
+        font-size: 1.2rem;
+    }
 
-  h2.section-title {
-    font-size: 2.5rem;
-  }
+    h2.section-title {
+        font-size: 2.5rem;
+    }
 }
 
 .responsive-img {
-    width: 100%;       /* Make the image take up the full width of its container */
-    height: auto;      /* Keep the aspect ratio intact */
-    display: block;    /* Remove any small gaps below the image */
-    max-width: 100%;   /* Ensures image doesn’t exceed its actual width */
-    border-radius: 8px;  /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-  }
+    width: 100%;
+    /* Make the image take up the full width of its container */
+    height: auto;
+    /* Keep the aspect ratio intact */
+    display: block;
+    /* Remove any small gaps below the image */
+    max-width: 100%;
+    /* Ensures image doesn’t exceed its actual width */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+}
 
-  .servers {
+.servers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;  /* Space between logos */
+    gap: 20px;
+    /* Space between logos */
     margin-top: 20px;
-  }
-  
-  .server {
+}
+
+.server {
     text-align: center;
-    background-color: #f0f0f0; /* Light background for logo containers */
+    background-color: #f0f0f0;
+    /* Light background for logo containers */
     padding: 10px;
     border-radius: 10px;
-    width: 150px; /* Adjust width of each server box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    width: 150px;
+    /* Adjust width of each server box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: add shadow for depth */
     transition: transform 0.3s ease;
-  }
-  
-  .server a {
+}
+
+.server a {
     display: block;
-  }
-  
-  .server-logo {
+}
+
+.server-logo {
     width: 100%;
-    height: auto;   /* Keep the aspect ratio of the logos */
-    border-radius: 8px;  /* Add rounded corners to logos */
-  }
-  
-  .server p {
+    height: auto;
+    /* Keep the aspect ratio of the logos */
+    border-radius: 8px;
+    /* Add rounded corners to logos */
+}
+
+.server p {
     margin-top: 10px;
     font-size: 1rem;
     color: #333;
-  }
-  
-  .server:hover {
-    transform: scale(1.05);  /* Slightly enlarge the logo on hover */
-  }
-  
+}
+
+.server:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the logo on hover */
+}
+/* Return to top link */
+a[href="#top"] {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href="#top"]:hover {
+    text-decoration: underline;
+}

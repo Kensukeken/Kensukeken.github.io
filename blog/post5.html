@@ -6,47 +6,6 @@
     <title>Blog post 5</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        /* General Styling */
-        body {
-            margin: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets the font family for the text */
-            background-image: url('../gifs/math.gif'); /* Sets a background image */
-            background-color: #ddd;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: #0f0707;
-        }
-
-        /* Header Styling */
-        header {
-        position: sticky;
-        top: 0;
-        background-color: #52287a97; /* Sets the background color */
-        color: white; /* Sets the text color */
-        padding: 1rem; /* Adds padding */
-        text-align: center; /* Aligns the text to the center */
-        animation: slideDown 1s ease-in-out; /* Adds a slide-down animation to the header */
-}
-
-        header nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin-right: 1rem;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Sidebar Styling */
         .menu-btn {
             font-size: 1.5rem;
             background: #52287a;
@@ -64,7 +23,7 @@
             width: 250px;
             position: fixed;
             top: 0;
-            left: -250px; /* Initially hidden off-screen */
+            left: -250px; 
             background-color: #f8f8f8;
             border-right: 1px solid #ddd;
             padding: 1rem;
@@ -130,14 +89,6 @@
         .main-content.expanded {
             margin-left: 250px;
         }
-        footer {
-        background-color: #52287a97; /* Sets the background color */
-        color: white; /* Sets the text color */
-        text-align: center; /* Centers the text */
-        padding: 1rem; /* Adds padding */
-        margin-top: 2rem; /* Adds top margin */
-        animation: slideUp 1s ease-in-out; /* Adds a slide-up animation to the footer */
-}
     </style>
     <script>
         function toggleMenu() {
@@ -161,9 +112,9 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="menu-btn" onclick="toggleMenu()">☰ Menu</div>
-    
+
     <div class="sidebar">
         <h2>Contents</h2>
         <ul>
@@ -174,21 +125,21 @@
             <li><a href="#lesson">Lesson or Moral</a></li>
             <li><a href="#review">Review</a></li>
             <li><a href="#footer">Footer</a></li>
-            <div class="dropdown">
-                <button class="dropdown-btn">More <i class="fa fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="https://en.wikipedia.org/wiki/Hidden_Figures">Wikipedia</a>
-                    <a href="https://www.scientificamerican.com/article/the-story-of-nasas-real-ldquo-hidden-figures-rdquo/">Story of Nasa</a>
-                </div>
-            </div>
         </ul>
+        <div class="dropdown">
+            <button class="dropdown-btn">More <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="https://en.wikipedia.org/wiki/Hidden_Figures">Wikipedia</a>
+                <a href="https://www.scientificamerican.com/article/the-story-of-nasas-real-ldquo-hidden-figures-rdquo/">Story of Nasa</a>
+            </div>
+        </div>
     </div>
 
     <div class="main-content">
-        <h2>Movie Review: Hidden Figures</h2>
         <article>
             <section id="characters" class="movie-info">
-                <h3>Important Characters</h3>
+                <h1>Movie Review: Hidden Figures</h1>
+                <h2>Important Characters</h2>
                 <p><strong>Hidden Figures</strong> features two pivotal characters, portrayed by acclaimed actors:</p>
                 <table>
                     <thead>
@@ -209,44 +160,34 @@
                     </tbody>
                 </table>
                 <a href="#summary" class="btn btn-primary">Read More</a>
-            </section>
-            
-            <section id="summary" class="summary">
-                <h3>Story Summary</h3>
-                <p>The <strong> Hidden Figures</strong> is a story about an African woman, who work at Langley Aeronautical Laboratory in Hampton, Virginia, starting in the early 1940s. The women play an integral role in the development of American aviation and space technology.  If you like stories about space or people who work hard to do amazing things, you’ll like this movie. It is also good for people who like to learn about the past. I give Hidden Figures 5 stars out of 5 because it is a great story. It makes you feel good and teaches you something new. The movie shows that anyone can do big things if they try hard enough. It is essential to remember and celebrate everyone who does something special, even if others did not notice them before.</p>
-                <a href="#audience" class="btn btn-primary">Read Summary</a>
-            </section>
 
-            <section id="audience" class="audience">
-                <h3>Who Would Like This Movie?</h3>
+                <h2>Story Summary</h2>
+                <p>The <strong> Hidden Figures</strong> is a story about an African woman, who work at Langley Aeronautical Laboratory in Hampton, Virginia, starting in the early 1940s. The women play an integral role in the development of American aviation and space technology. If you like stories about space or people who work hard to do amazing things, you’ll like this movie. It is also good for people who like to learn about the past. I give Hidden Figures 5 stars out of 5 because it is a great story. It makes you feel good and teaches you something new. The movie shows that anyone can do big things if they try hard enough. It is essential to remember and celebrate everyone who does something special, even if others did not notice them before.</p>
+                <a href="#audience" class="btn btn-primary">Read Summary</a>
+
+                <h2>Who Would Like This Movie?</h2>
                 <p>This movie is perfect for anyone fascinated by space exploration or stories of perseverance and achievement. If you enjoy learning about historical figures who have made groundbreaking contributions to science and technology, you'll find <strong>Hidden Figures</strong> both inspiring and educational. It's also a great watch for those who appreciate historical dramas and want to learn about the unsung heroes behind major scientific milestones.</p>
                 <a href="#rating" class="btn btn-secondary">Find Out More</a>
-            </section>
 
-            <section id="rating" class="rating">
-                <h3>Rating</h3>
+                <h2>Rating</h2>
                 <p><strong>Hidden Figures</strong> deserves a full 5 stars out of 5. The film not only offers a compelling and heartwarming story but also delivers an important historical lesson. Its engaging narrative, stellar performances, and inspirational message make it a must-watch.</p>
                 <a href="#lesson" class="btn btn-primary">View Rating</a>
-            </section>
 
-            <section id="lesson" class="lesson">
-                <h3>Lesson or Moral</h3>
+                <h2>Lesson or Moral</h2>
                 <p>The central lesson of <strong>Hidden Figures</strong> is that determination and hard work can lead to extraordinary achievements, regardless of the obstacles. The film underscores the importance of recognizing and celebrating the contributions of individuals who might otherwise go unnoticed, highlighting the value of diversity and inclusion in achieving great things.</p>
                 <a href="#review" class="btn btn-secondary">Learn More</a>
-            </section>
 
-            <section id="review" class="review">
-                <h3>Review</h3>
-            <p>I highly recommend the movie <em>Hidden Figures</em> to my friends. It is a movie that shows the story of couple amazing African American women who worked at <em>NASA</em> during the race to space. These women did great things that not many people know about. The movie is exciting like a superhero story, but it is all true. It also reveals to us how necessary it is to work together and respect everyone. Because of this movie, more people, especially girls and those from different backgrounds, want to follow their dreams in science, Engineering and mathematics (STEM).</p>   
-            <p>To start with, In the movie <em>Hidden Figures</em> can teach you a history of space race.  For instance, the movie shows how African American women made serious contributions to <em>NASA</em> during the Space Race. You will discover something not many people talk about. This establishes the significance of the movie to help you learn more about the future once you get a job at <em>NASA</em> and help others.</p>
-            <p>In addition, <em>Hidden Figures</em> celebrates getting inspired and teamwork. The movie is all about empowerment. It shows how these women faced challenges and difficulty times but still succeeded. It is like a superhero story, but real. It demonstrates that progress happens faster when people with different backgrounds work together. While this point might not be as strong, it still highlights the value of including everyone. </p>
-            <p>In conclusion, I would recommend the movie <em>Hidden Figures</em> to my friends. It is a movie that helps you learn about the history of the space race, the crucial work that African American women made at NASA, and the history of the movie itself. In other words, it is exciting to see how they get better of challenges and succeed against all difficulties. This movie is not just enjoyable; it supports us to believe that everyone can make a difference in the world, no matter who they are or where they come from. Watching <em>Hidden Figures</em> can motivate us to learn more, do more, and be more caught in everything we do.</p>
-        </section>
+                <h2>Review</h2>
+                <p>I highly recommend the movie <em>Hidden Figures</em> to my friends. It is a movie that shows the story of couple amazing African American women who worked at <em>NASA</em> during the race to space. These women did great things that not many people know about. The movie is exciting like a superhero story, but it is all true. It also reveals to us how necessary it is to work together and respect everyone. Because of this movie, more people, especially girls and those from different backgrounds, want to follow their dreams in science, Engineering and mathematics (STEM).</p>
+                <p>To start with, In the movie <em>Hidden Figures</em> can teach you a history of space race. For instance, the movie shows how African American women made serious contributions to <em>NASA</em> during the Space Race. You will discover something not many people talk about. This establishes the significance of the movie to help you learn more about the future once you get a job at <em>NASA</em> and help others.</p>
+                <p>In addition, <em>Hidden Figures</em> celebrates getting inspired and teamwork. The movie is all about empowerment. It shows how these women faced challenges and difficulty times but still succeeded. It is like a superhero story, but real. It demonstrates that progress happens faster when people with different backgrounds work together. While this point might not be as strong, it still highlights the value of including everyone.</p>
+                <p>In conclusion, I would recommend the movie <em>Hidden Figures</em> to my friends. It is a movie that helps you learn about the history of the space race, the crucial work that African American women made at NASA, and the history of the movie itself. In other words, it is exciting to see how they get better of challenges and succeed against all difficulties. This movie is not just enjoyable; it supports us to believe that everyone can make a difference in the world, no matter who they are or where they come from. Watching <em>Hidden Figures</em> can motivate us to learn more, do more, and be more caught in everything we do.</p>
+            </section>
         </article>
     </div>
-    
     <footer>
         <p>&copy; 2024 Kensukeken</p>
+        <a href="#top">RETURN TO TOP</a>
     </footer>
 </body>
 </html>
