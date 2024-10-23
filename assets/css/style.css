@@ -344,6 +344,13 @@ main h1 {
     /* Slightly enlarge the icon on hover */
 }
 
+/* Stule for timestamp */
+.timestamp {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 /* Project List Styles */
 .project-list {
     display: grid;
@@ -376,6 +383,14 @@ main h1 {
 /* Hover effect for project card links */
 .project-card h2 a:hover {
     text-decoration: underline;
+}
+
+/* Style for the location section */
+.location-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Use current color for link */
+    font-weight: bold; /* Make location bold */
+    font-size: 0.9em; /* Decrease font size */
 }
 
 /* Slide-up animation */
@@ -511,8 +526,11 @@ footer {
 }
 
 .welcome-button:hover {
-    background-color: #7100b3;
-    /* Changes the background color on hover */
+    background-color: #9848e2;
+    color: #d3bff0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* Changes the background color to purple and text color to light purple on hover */
 }
 
 .custom-emoji img {
@@ -890,7 +908,7 @@ a.latex-link:hover {
 
 .server {
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #d5c2ef;
     /* Light background for logo containers */
     padding: 10px;
     border-radius: 10px;
@@ -916,20 +934,10 @@ a.latex-link:hover {
 .server p {
     margin-top: 10px;
     font-size: 1rem;
-    color: #333;
+    color: #311d4a;
 }
 
 .server:hover {
     transform: scale(1.05);
     /* Slightly enlarge the logo on hover */
-}
-/* Return to top link */
-a[href="#top"] {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a[href="#top"]:hover {
-    text-decoration: underline;
 }

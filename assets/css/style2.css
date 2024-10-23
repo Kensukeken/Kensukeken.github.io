@@ -1,0 +1,33 @@
+/* Scroll to top button */
+#top {
+    position: absolute; /* Position it at the top */
+    top: 0;
+}
+
+#scrollToTop {
+    position: fixed; /* Fixed position on the screen */
+    bottom: 20px; /* Space from bottom */
+    right: 20px; /* Space from right */
+    padding: 10px 15px; /* Padding for the button */
+    background: linear-gradient(45deg, #7700e6, #968fbd); /* Gradient button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+}
+#scrollToTop:hover {
+    background: purple;
+    text-decoration: none; /* No underline on hover */
+}
+
+/* Return to top link */
+a[href="#top"] {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href="#top"]:hover {
+    text-decoration: underline;
+}

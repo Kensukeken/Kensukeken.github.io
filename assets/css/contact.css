@@ -1,0 +1,88 @@
+  /* General styling for the contact section */
+  .contact-section {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+.contact-form button:focus {
+    outline: none;
+}
+
+/* Additional text styling */
+.contact-section p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1rem;
+    }
+}
+.discord-link {
+color: #7289da;
+text-decoration: none;
+font-weight: bold;
+}
+
+.discord-link:hover {
+text-decoration: underline;
+}
