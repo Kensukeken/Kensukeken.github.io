@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <nav>
+        <button id="menu-toggle">Menu</button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../about/index.html">About Me</a></li>
@@ -20,36 +21,53 @@
             </ul>
         </nav>
     </header>
+    <script src="../assets/js/menu.js"></script>
     <section>
         <h1>My Artworks</h1>
         <p> These artworks are by hand</p>
         <div class="artwork-gallery">
             <div class="artwork-item"><img src="../assets/images/zerotwo.png" alt="Artwork 1"><p>Zero Two - Darling in the Franxx</p></div>
             <div class="artwork-item"><img src="../assets/images/hero.png" alt="Artwork 2"><p>Hero - Darling in the Franxx</p></div>
-            <div class="artwork-item"><img src="../assets/images/L.jpg" alt="Artwork 3"><p>L - Death Note</p></div>
-            <div class="artwork-item"><img src="../assets/images/dio.jpg" alt="Artwork 4"><p>Dio - Jojo Bizarre Adventure</p></div>
-            <div class="artwork-item"><img src="../assets/images/tk.jpg" alt="Artwork 5"><p>Toru Kitajima - Japanese musician and singer-songwriter</p></div>
-            <div class="artwork-item"><img src="../assets/images/iu.jpg" alt="Artwork 6"><p>IU - South Korean singer-songwriter and actress</p></div>
-            <div class="artwork-item"><img src="../assets/images/kaneki.png" alt="Artwork 7"><p>Ken Kaneki - Tokyo Ghoul</p></div>
-            <div class="artwork-item"><img src="../assets/images/touka.png" alt="Artwork 8"><p>Touka Kirishima - Tokyo Ghoul</p></div>
-            <div class="artwork-item"><img src="../assets/images/kokichi1.png" alt="Artwork 9"><p>Kokichi Ouma - Danganronpa V3</p></div>
-            <div class="artwork-item"><img src="../assets/images/beethoven.png" alt="Artwork 10"><p>Ludwig van Beethoven - German composer and pianist</p></div>
-            <div class="artwork-item"><img src="../assets/images/creepy.png" alt="Artwork 11"><p>Pumpkin Pie Guy - Halloween</p></div>
-            <div class="artwork-item"><img src="../assets/images/wednesday.jpg" alt="Artwork 12"><p>Wednesday - Wednesday 2022 Horror</p></div>
-            <div class="artwork-item"><img src="../assets/images/thing.png" alt="Artwork 13"><p>Thing - Wednesday 2022 Horror</p></div>
-            <div class="artwork-item"><img src="../assets/images/wednesdayxenid.jpg" alt="Artwork 14"><p>Wednesday & Enid - Wednesday 2022 Horror</p></div>
-            <div class="artwork-item"><img src="../assets/images/kokichi2.jpg" alt="Artwork 15"><p>Kokichi Ouma - Danganronpa V3</p></div>
-            <div class="artwork-item"><img src="../assets/images/kokichi3.jpg" alt="Artwork 16"><p>Kokichi Ouma - Danganronpa V3</p></div>
-            <div class="artwork-item"><img src="../assets/images/sci.jpg" alt="Artwork 17"><p>Elisa Recker - Science</p></div>
-            <div class="artwork-item"><img src="../assets/images/harry.png" alt="Artwork 18"><p>Harry Styles</p></div>
-            <div class="artwork-item"><img src="../assets/images/glassanimal.jpg" alt="Artwork 19"><p>Dave Bayley - Glass Animals</p></div>
-            <div class="artwork-item"><img src="../assets/images/terrifer.jpg" alt="Artwork 20"><p>The Clown - Terrifer 2</p></div>
-            <div class="artwork-item"><img src="../assets/images/brucelee.png" alt="Artwork 21"><p>Bruce Lee - Hong Kong-American martial artist and actor</p></div>
-            <div class="artwork-item"><img src="../assets/images/hopf_fibration.jpg" alt="Artwork 22"><p>Hopf Fibration</p></div>
-            <div class="artwork-item"><img src="../assets/images/flower.jpg" alt="Artwork 23"><p>Flower</p></div>
-            <div class="artwork-item"><img src="../assets/images/catking.png" alt="Artwork 24"><p>Catking Emoji - Mathematics Discord Server</p></div>
-            <div class="artwork-item"><img src="../assets/images/eevee.png" alt="Artwork 25"><p>Eevee - Pokédex</p></div>
-            <div class="artwork-item"><img src="../assets/images/icon.png" alt="Artwork 26"><p>Kensukeken Logo - Geometry Dash</p></div>
+            <div class="artwork-item"><img src="../assets/images/remxemilia.png" alt="Artwork 3"><p>Rem X Emilia - ReZero</p></div>
+            <div class="artwork-item"><img src="../assets/images/L.jpg" alt="Artwork 4"><p>L - Death Note</p></div>
+            <div class="artwork-item"><img src="../assets/images/dio.jpg" alt="Artwork 5"><p>Dio - Jojo Bizarre Adventure</p></div>
+            <div class="artwork-item"><img src="../assets/images/tanjiro2.png" alt="Artwork 6"><p>Kamado Tanjiro - Demon Slayer</p></div>
+            <div class="artwork-item"><img src="../assets/images/tk.jpg" alt="Artwork 7"><p>Toru Kitajima - Japanese musician and singer-songwriter</p></div>
+            <div class="artwork-item"><img src="../assets/images/hide.png" alt="Artwork 8"><p>Hideyoshi Nagachika - Tokyo Ghoul</p></div>
+            <div class="artwork-item"><img src="../assets/images/kaneki.png" alt="Artwork 9"><p>Ken Kaneki - Tokyo Ghoul</p></div>
+            <div class="artwork-item"><img src="../assets/images/touka.png" alt="Artwork 10"><p>Touka Kirishima - Tokyo Ghoul</p></div>
+            <div class="artwork-item"><img src="../assets/images/kokichi1.png" alt="Artwork 11"><p>Kokichi Ouma - Danganronpa V3</p></div>
+            <div class="artwork-item"><img src="../assets/images/beethoven.png" alt="Artwork 12"><p>Ludwig van Beethoven - German composer and pianist</p></div>
+            <div class="artwork-item"><img src="../assets/images/creepy.png" alt="Artwork 13"><p>Pumpkin Pie Guy - Halloween</p></div>
+            <div class="artwork-item"><img src="../assets/images/wednesday.jpg" alt="Artwork 14"><p>Wednesday - Wednesday 2022 Horror</p></div>
+            <div class="artwork-item"><img src="../assets/images/thing.png" alt="Artwork 15"><p>Thing - Wednesday 2022 Horror</p></div>
+            <div class="artwork-item"><img src="../assets/images/wednesdayxenid.jpg" alt="Artwork 16"><p>Wednesday & Enid - Wednesday 2022 Horror</p></div>
+            <div class="artwork-item"><img src="../assets/images/kokichi2.jpg" alt="Artwork 17"><p>Kokichi Ouma - Danganronpa V3</p></div>
+            <div class="artwork-item"><img src="../assets/images/kokichi3.jpg" alt="Artwork 18"><p>Kokichi Ouma - Danganronpa V3</p></div>
+            <div class="artwork-item"><img src="../assets/images/sci.jpg" alt="Artwork 19"><p>Elisa Recker - Science</p></div>
+            <div class="artwork-item"><img src="../assets/images/iu.jpg" alt="Artwork 20"><p>IU - South Korean singer-songwriter and actress</p></div>
+            <div class="artwork-item"><img src="../assets/images/harry.png" alt="Artwork 21"><p>Harry Styles</p></div>
+            <div class="artwork-item"><img src="../assets/images/glassanimal.jpg" alt="Artwork 22"><p>Dave Bayley - Glass Animals</p></div>
+            <div class="artwork-item"><img src="../assets/images/terrifer.jpg" alt="Artwork 23"><p>The Clown - Terrifer 2</p></div>
+            <div class="artwork-item"><img src="../assets/images/brucelee.png" alt="Artwork 24"><p>Bruce Lee - Hong Kong-American martial artist and actor</p></div>
+            <div class="artwork-item"><img src="../assets/images/moyai.png" alt="Artwork 25"><p>Moyai</p></div>
+            <div class="artwork-item"><img src="../assets/images/hopf_fibration.jpg" alt="Artwork 26"><p>Hopf Fibration</p></div>
+            <div class="artwork-item"><img src="../assets/images/flower.jpg" alt="Artwork 27"><p>Purple Flower</p></div>
+            <div class="artwork-item"><img src="../assets/images/flowerPink.jpg" alt="Artwork 28"><p>Pink Flower</p></div>
+            <div class="artwork-item"><img src="../assets/images/hyoka.jpg" alt="Artwork 29"><p>Hyouka - Hyōka</p></div>
+            <div class="artwork-item"><img src="../assets/images/catking.png" alt="Artwork 30"><p>Catking Emoji - Mathematics Discord Server</p></div>
+            <div class="artwork-item"><img src="../assets/images/eevee.png" alt="Artwork 31"><p>Eevee - Pokédex</p></div>
+            <div class="artwork-item"><img src="../assets/images/icon.png" alt="Artwork 32"><p>Kensukeken Logo - Geometry Dash</p></div>
+        </div>
+        <div>
+            <h1>Artworks in Whiteboard & Chalkboard</h1>
+            <p>Here are some artworks I did in whiteboard and chalkboard.</p>
+            <div class="artwork-gallery">
+                <div class="artwork-item"><img src="../assets/images/tanjiro.png" alt="Whiteboard Artwork 1"></div>
+                <div class="artwork-item"><img src="../assets/images/eeveeB.jpg" alt="Whiteboard Artwork 2"></div>
+                <div class="artwork-item"><img src="../assets/images/catB.jpg" alt="Whiteboard Artwork 3"></div>
+                <div class="artwork-item"><img src="../assets/images/fireintheholeB.jpg" alt="Whiteboard Artwork 4"></div>
+                <div class="artwork-item"><img src="../assets/images/pomB.jpg" alt="Whiteboard Artwork 5"></div>
         </div>
         <h1>Artworks in Tikz</h1>
         <p>These are made by TeXit bot(Aka LaTeX).</p>

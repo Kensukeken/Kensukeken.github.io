@@ -118,6 +118,49 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-menu.open {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: #5c4c73;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+/* Hide the menu for desktop users */
+@media (min-width: 769px) {
+    #nav-menu.open {
+        display: none;
+    }
+}
+
+/* Style for the menu toggle button */
+#menu-toggle {
+    display: none;
+}
+
+/* Show the menu toggle button on mobile */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+        background: linear-gradient(45deg, #7700e6, #968fbd); 
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+    }
+}
 
 /* Style for the main content area */
 main {
@@ -755,7 +798,7 @@ td {
 }
 
 th {
-    background-color: #52287a;
+    background-color: #52287aa3;
 }
 
 /* General Styles for Date */
@@ -812,44 +855,6 @@ th {
         font-size: 0.875rem;
     }
 }
-
-/* Sidebar Styles */
-aside {
-    width: 25%;
-    padding: 1rem;
-    background: #e9e9e9;
-    border-left: 2px solid #ddd;
-    position: fixed;
-    top: 4rem;
-    right: 0;
-    height: calc(100vh - 4rem);
-    overflow: auto;
-}
-
-aside h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-aside ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-aside ul li {
-    margin-bottom: 0.5rem;
-}
-
-aside ul li a {
-    text-decoration: none;
-    color: #52287a;
-}
-
-aside ul li a:hover {
-    text-decoration: underline;
-}
-
 
 .hobbies-section {
     background-color: #f0e6fa;

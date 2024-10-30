@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Post 6</title>
         <link rel="stylesheet" href="../assets/css/style.css">
-        <title>Top 5 Mistakes to Avoid as a New Programmer</title>
+        <link rel="stylesheet" href="../assets/css/style2.css">
         <style>
         form {
             margin-top: 20px;
@@ -31,17 +32,19 @@
     </head>
     <body>
         <header>
-            <nav>
+            <button id="menu-toggle">Menu</button>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../about/index.html">About Me</a></li>
                     <li><a href="../projects/index.html">Projects</a></li>
-                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
                     <li><a href="../artworks/index.html">Artworks</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
+        <script src="../assets/js/menu.js"></script>
         <section class="blog-content">
             <div class="content">
                 <h1>Top 5 Mistakes to Avoid as a New Programmer</h1>
@@ -169,26 +172,11 @@
                 </div>
             </div>
         </section>
-        <script>
-        document.getElementById('commentForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Get user input
-            var name = document.getElementById('name').value;
-            var comment = document.getElementById('comment').value;
-
-            // Create a new comment element
-            var commentSection = document.getElementById('commentsSection');
-            var newComment = document.createElement('div');
-            newComment.innerHTML = '<p><strong>' + name + ':</strong> ' + comment + '</p>';
-            commentSection.appendChild(newComment);
-
-            // Clear the form
-            document.getElementById('commentForm').reset();
-        });
-    </script>
+        <script src="../assets/js/comment.js"></script>
     </body>
     <footer>
         <p>&copy; 2024 Kensukeken</p>
+        <a href="#top" id="scrollToTop">RETURN TO TOP</a>
+        <script src="../assets/js/scroll.js"></script>
     </footer>
 </html>
