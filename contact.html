@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/style2.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/style2.css" />
+        <link rel="stylesheet" href="../assets/css/contact.css" />
+        <link rel="stylesheet" href="../assets/css/footer.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <header>
+            <button id="menu-toggle">Menu</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/index.html">About Me</a></li>
+                    <li><a href="../projects/index.html">Projects</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="../artworks/index.html">Artworks</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script src="../assets/js/menu.js"></script>
+        <section>
+            <section class="contact-section">
+                <h1>Contact Me <img src="../assets/images/smiley.png" alt="Emoji" style="width: 30px; height: 30px; vertical-align: middle;" /></h1>
 
-</head>
-<body>
-  <header>
-    <button id="menu-toggle">Menu</button>
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about/index.html">About Me</a></li>
-            <li><a href="../projects/index.html">Projects</a></li>
-            <li><a href="../blog/index.html">Blog</a></li>
-            <li><a href="../artworks/index.html">Artworks</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<script src="../assets/js/menu.js"></script>
-    <section>
-        <section class="contact-section">
-            <h1>Contact Me <img src="../assets/images/smiley.png" alt="Emoji" style="width: 30px; height: 30px; vertical-align: middle;"></h1>
-            <p>If you have any questions or just want to get in touch, feel free to send me a message using the form below. I'll get back to you as soon as possible!</p>
-            <form
-              class="contact-form"
-              action="https://formspree.io/f/xldrpbyz"
-              method="POST"
-            >
-              <label>
-                Your email:
-                <input type="email" name="email" required>
-              </label>
-              <label>
-                Your message:
-                <textarea name="message" rows="6" required></textarea>
-              </label>
-              <button type="submit">Send</button>
-            </form>
+                <p>If you have any questions or just want to get in touch, feel free to send me a message using the form below. I'll get back to you as soon as possible!</p>
+                <form class="contact-form" action="https://formspree.io/f/xldrpbyz" method="POST">
+                    <label>
+                        Your email:
+                        <input type="email" name="email" required />
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea name="message" rows="6" required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            <p>Or connect with me on <a href="https://discord.com/users/kensukeken" class="discord-link" target="_blank">Discord</a>!</p>
         </section>
-        <p>Or connect with me on <a href="https://discord.com/users/kensukeken" class="discord-link" target="_blank">Discord</a>!</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Kensukeken</p>
+        <footer>
+            <div class="footer-content">
+                <h3 class="new-h3-style">
+                    Kensukeken {Computer Literacy}
+                    <img src="../assets/images/cube.png" alt="Emoji" style="width: 30px; height: 30px; vertical-align: middle;" />
+                </h3>
+                <p>
+                    I'm proficient in various programming languages and tools, including Python, C++, Java, Julia, C#, CSS, HTML, JavaScript, React, Go, PHP, Lua, MATLAB, XML, MySQL, JSON, Linux, Ubuntu, Node.js, npm, Git, Redux, VSCode,
+                    Vim, and IntelliJ IDEA. I'm also familiar with Android development.
+                </p>
+                <ul class="socials">
+                    <li>
+                        <a href="https://twitter.com/Kensukeken_"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCBvJDLAaRQ80NCJIASY51bg"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Kensukeken"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://replit.com/@Kensukeken1"><i class="fa fa-code"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@kensukeken2016"><i class="fa fa-medium"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021-2024 <a href="https://github.com/Kensukeken">Kensukeken</a></p>
+                <div class="footer-menu">
+                    <ul class="f-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/index.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         <a href="#top" id="scrollToTop">RETURN TO TOP</a>
         <script src="../assets/js/scroll.js"></script>
-    </footer>
-</body>
+    </body>
 </html>

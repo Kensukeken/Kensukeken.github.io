@@ -6,7 +6,7 @@
 
 #scrollToTop {
     position: fixed; /* Fixed position on the screen */
-    bottom: 20px; /* Space from bottom */
+    bottom: 70px; /* Increased space from bottom */
     right: 20px; /* Space from right */
     padding: 10px 15px; /* Padding for the button */
     background: linear-gradient(45deg, #7700e6, #968fbd); /* Gradient button color */
@@ -16,6 +16,7 @@
     cursor: pointer; /* Pointer cursor on hover */
     text-decoration: none; /* No underline */
 }
+
 #scrollToTop:hover {
     background: purple;
     text-decoration: none; /* No underline on hover */
@@ -30,4 +31,38 @@ a[href="#top"] {
 
 a[href="#top"]:hover {
     text-decoration: underline;
+}
+
+/* Image Classes */
+.imgOne {
+    float: right;
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 0 0 10px 20px;
+}
+  
+.imgTwo {
+    float: left;
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 0 20px 10px 0;
+}
+
+.myParagraph {
+    color: hsl(0, 0%, 99%);
+    text-align: center;
+}
+  
+.myh2::first-letter {
+    font-size: 2rem;
+}
+
+.myh2 {
+    color: hsl(267, 19%, 34%);
+    border-bottom: none;
+    clear: both;
 }

@@ -1,0 +1,135 @@
+/* Style for new h3 elements */
+.new-h3-style {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #333;
+    text-transform: none;
+    line-height: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+/* Style for footer content container */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Style for h3 elements inside footer content */
+.footer-content h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #a793f8;
+}
+
+/* Style for span elements inside h3 in footer content */
+.footer-content h3 span {
+    color: #9377ef;
+}
+
+/* Style for paragraph elements inside footer content */
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+/* Style for social media icons list */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+/* Style for each social media icon list item */
+.socials li {
+    margin: 0 10px;
+}
+
+/* Style for social media anchor tags */
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Style for icons inside social media anchor tags */
+.socials a i {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color 0.4s ease;
+    display: inline-block;
+}
+
+/* Hover effect for social media icons */
+.socials a:hover i {
+    color: violet;
+}
+
+/* Style for paragraph elements in footer bottom */
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* Style for anchor tags inside footer bottom paragraph */
+.footer-bottom p a {
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Style for span elements in footer bottom */
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
+
+/* Style for footer menu container */
+.footer-menu {
+    float: right;
+}
+
+/* Style for unordered list inside footer menu */
+.footer-menu ul {
+    display: flex;
+}
+
+/* Style for list items inside footer menu */
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+/* Style for anchor tags inside footer menu list items */
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
+}
+
+/* Hover effect for anchor tags inside footer menu list items */
+.footer-menu ul li a:hover {
+    color: #baa1f4;
+}
+
+/* Responsive styles for screens with max width of 500px */
+@media (max-width: 500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
