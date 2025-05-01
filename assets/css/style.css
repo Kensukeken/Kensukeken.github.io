@@ -282,15 +282,11 @@ main h1 {
 /* Style for the profile picture */
 .profile-card img {
     width: 130px;
-    /* Increased width for a more prominent profile picture */
     height: 130px;
-    /* Increased height to match width */
     border-radius: 50%;
-    /* Circular profile picture */
-    margin-bottom: 1rem;
-    /* Added margin below the image */
+    object-fit: cover;
+    margin-bottom: 2rem;
     transition: transform 0.3s ease, filter 0.3s ease;
-    /* Transition for scale and filter */
 }
 
 /* Hover effect for the profile picture */
